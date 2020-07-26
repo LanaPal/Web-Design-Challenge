@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Landing Page</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+<!-- navbar-->
+<nav class="navbar">
+  <header class "header">
+    <div class="col">
+      <h1>Latitude</h1>
+    </div>
+  </header>
+  <br>
+
+      <ul class="nav justify-content-end">
+        <li class="nav-item">
+          <div class="dropdown">
+            <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Plots
+            </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Max Temperature</a>
+                <a class="dropdown-item" href="#">Humidity</a>
+                <a class="dropdown-item" href="#">Cloudiness</a>
+                <a class="dropdown-item" href="#">Wind Speed</a>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Comparison</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Data</a>
+          </li>
+        </ul>
+      </nav>
+<!-- end of navbar-->
+
+<!--cards-->
+<div class="row">
+  
+  <div class="col-sm-6">
+    <div class="card mb-3" style="max-width: 540px;">
+      <div class="row no-gutters">
+        <h2 class="card-title"><strong>Latitude vs. Other Dimensions</strong></h2>
+        <div class="col-md-4">
+          <img style="max-width: 300px" src="https://github.com/LanaPal/Web-Design-Challenge/blob/master/Resources/MaxTemperature.png?raw=true" class="card-img" alt="Max Temperature">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <p class="card-text">The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this analysis, we pulled the data from the OpenWeatherMap API to assemble a dataset on over 500 cities</p>
+            <p class="card_text">After assempling the dataset, we used Matplotlib to plot varous aspects of the weather vs. latitude.
+            Factors we looked at included: temperature, cloudiness, wind speed, and humidity. This site provides the source data and visualizations created as part of the analysis,
+            as well as explanations and descriptions of any trends and correlations witnessed.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-sm-4">
+    <div class="card">
+      <div class="card-body">
+        <h2 class="card-title"><strong>Latitude vs. Other Dimensions</strong></h2>
+          <div class="card-columns">
+            <div class="card">
+              <img src="https://github.com/LanaPal/Web-Design-Challenge/blob/master/Resources/MaxTemperature.png?raw=true" class="card-img" alt="Max Temperature">
+            </div>
+          
+            <div class="card">
+              <img src="https://github.com/LanaPal/Web-Design-Challenge/blob/master/Resources/Humidity.png?raw=true" class="card-img" alt="Humidity">
+            </div>
+          </div>
+          
+          <div class="card-columns">
+            <div class="card">
+              <img src="https://github.com/LanaPal/Web-Design-Challenge/blob/master/Resources/Cloudiness.png?raw=true" class="card-img" alt="Cloudiness">
+            </div>
+          
+            <div class="card">
+              <img src="https://github.com/LanaPal/Web-Design-Challenge/blob/master/Resources/WindSpeed.png?raw=true" class="card-img" alt="Wind Speed">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
