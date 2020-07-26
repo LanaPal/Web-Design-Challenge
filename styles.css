@@ -30,6 +30,7 @@ h1 {
     padding: 35px;
     border-color: #17a2b8;
     font-size: 40px;
+    margin-left: 1.3cm;
 }
 
 h2 {color:  #17a2b8;
@@ -57,5 +58,5 @@ background-color: #F0FFFF;
 }
 
 .card {
-    margin-block-start: 0.83em;
+    margin-left: 2cm;
 }
